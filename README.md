@@ -53,6 +53,7 @@ Berikut adalah panduan untuk menjalankan _project_ ini di komputer/laptop secara
     - Pastikan file `.env` sudah ada. (Jika belum, salin file `.env.example` dan ubah namanya menjadi `.env`).
     - Buka file `.env` dan atur koneksi _database_-nya agar mengarah ke _database_ MySQL lokal Anda:
 
+    ```
     env
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
@@ -60,9 +61,6 @@ Berikut adalah panduan untuk menjalankan _project_ ini di komputer/laptop secara
     DB_DATABASE=db_blog
     DB_USERNAME=root
     DB_PASSWORD=
-
-    ```
-
     ```
 
 3. **Persiapan Database & File Statis (Gambar)**
