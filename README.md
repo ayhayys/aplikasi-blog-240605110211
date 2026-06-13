@@ -77,3 +77,5 @@ Berikut adalah panduan untuk menjalankan _project_ ini di komputer/laptop secara
     ```bash
     php artisan serve
     ```
+## Link Youtube
+https://youtu.be/Q1Cc2v2EjSU
