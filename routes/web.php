@@ -9,8 +9,8 @@ use App\Http\Controllers\KategoriArtikelController;
 use App\Http\Controllers\PublicController;
 
 Route::get('/', [PublicController::class, 'index'])->name('public.home');
-Route::get('/artikel/{id}', [PublicController::class, 'show'])->name('public.artikel');
-Route::get('/kategori/{id}', [PublicController::class, 'category'])->name('public.kategori');
+Route::get('/artikel/{id}', [PublicController::class, 'show'])->name('public.artikel')->where('id', '[0-9]+');
+Route::get('/kategori/{id}', [PublicController::class, 'category'])->name('public.kategori')->where('id', '[0-9]+');
 Route::get('/tentang', [PublicController::class, 'tentang'])->name('public.tentang');
 Route::get('/semua-artikel', [PublicController::class, 'semuaArtikel'])->name('public.semua-artikel');
 
