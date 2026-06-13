@@ -1,4 +1,4 @@
-content = """# Sistem Manajemen Blog (CMS) - Laravel 11
+Sistem Manajemen Blog (CMS) - Laravel 11
 
 ## Identitas Mahasiswa
 
@@ -53,26 +53,29 @@ Berikut adalah panduan untuk menjalankan _project_ ini di komputer/laptop secara
     - Pastikan file `.env` sudah ada. (Jika belum, salin file `.env.example` dan ubah namanya menjadi `.env`).
     - Buka file `.env` dan atur koneksi _database_-nya agar mengarah ke _database_ MySQL lokal Anda:
 
-````env
-     DB_CONNECTION=mysql
-     DB_HOST=127.0.0.1
-     DB_PORT=3306
-     DB_DATABASE=db_blog
-     DB_USERNAME=root
-     DB_PASSWORD=
-     ```
+    env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=db_blog
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+    ```
+
+    ```
 
 3. **Persiapan Database & File Statis (Gambar)**
-   - Nyalakan Apache dan MySQL dari aplikasi XAMPP Control Panel.
-   - Karena project ini menggunakan database yang telah dibuat waktu UTS (`db_blog`), pastikan database tersebut beserta tabelnya (`penulis`, `kategori_artikel`, `artikel`) sudah tersedia di phpMyAdmin.
-   - Jalankan perintah migration untuk membuat tabel bawaan Laravel (seperti `sessions` dan `users`):
-     ```bash
-     php artisan migrate
-     ```
-   - Pastikan folder gambar/foto (`uploads_penulis` dan `uploads_artikel`) sudah diletakkan di dalam folder `public/` agar bisa diakses oleh sistem.
+    - Nyalakan Apache dan MySQL dari aplikasi XAMPP Control Panel.
+    - Karena project ini menggunakan database yang telah dibuat waktu UTS (`db_blog`), pastikan database tersebut beserta tabelnya (`penulis`, `kategori_artikel`, `artikel`) sudah tersedia di phpMyAdmin.
+    - Jalankan perintah migration untuk membuat tabel bawaan Laravel (seperti `sessions` dan `users`):
+        ```bash
+        php artisan migrate
+        ```
+    - Pastikan folder gambar/foto (`uploads_penulis` dan `uploads_artikel`) sudah diletakkan di dalam folder `public/` agar bisa diakses oleh sistem.
 
 4. Jalankan Development Server Laravel
    Ketikkan perintah berikut di terminal:
-   ```bash
-   php artisan serve
-````
+    ```bash
+    php artisan serve
+    ```
